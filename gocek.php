@@ -6,10 +6,10 @@ echo "| Version : BETA       \n";
 echo color("nevy"," ==========+++++++++==========\n");
 echo color("nevy","| Auto create Gojek\n");
 echo color("nevy","| Redeem voucher dan jajan \n");
-echo color("nevy","| github: bocahbarbar                 \n");
-echo color("nevy","| Creator : bocah bar bar            \n");
-echo "| Waktu    :".date('[d-m-Y] [H:i:s]')."   \n";
-echo " ==========+++++++++==========\n";
+echo color("nevy","| github    : bocahbarbar                 \n");
+echo color("nevy","| Creator   : bocah bar bar            \n");
+echo color("green","| Waktu    :".date('[d-m-Y] [H:i:s]')."   \n");
+echo color("nevy"," ==========+++++++++==========\n");
 // function change(){
     
         $nama = nama();
